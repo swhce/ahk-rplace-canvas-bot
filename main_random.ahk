@@ -107,7 +107,9 @@ Send, % "{" RN " down}"
 Sleep, 100
 Send, % "{" RN " up}"
 Sleep, 100
-Send, {Enter down}{Enter up}
+Send, {Enter down}
+Sleep, 100
+Send, {Enter up}
 Sleep, %GoTimes%
 }
 }
