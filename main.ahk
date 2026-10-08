@@ -22,7 +22,8 @@ Gui, Show,, ARCB (Default) by JurSecondie
 return
 
 colors:
-Random, GoTimes, 1500, 2500 ; randomized script cooldown trick to make the rplace.live server think it's a real human placing pixels and not just a macro that's doing it, preventing possible page reloads
+random, newseed
+Random, GoTimes, 1500, 1800 ; randomized script cooldown trick to make the rplace.live server think it's a real human placing pixels and not just a macro that's doing it, preventing possible page reloads
 
 F7::
 Gui, Submit, nohide

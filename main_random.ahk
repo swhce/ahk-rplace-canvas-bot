@@ -22,7 +22,7 @@ random, newseed
 Random, C, 1, 25
 Array := {1: "1", 2: "2", 3: "3", 4: "4", 5: "5", 6: "6", 7: "7", 8: "8", 9: "9", 10: "a", 11: "b", 12: "c", 13: "d", 14: "e", 15: "f", 16: "g", 17: "h", 18: "i", 19: "j", 20: "k", 21: "l", 22: "m", 23: "n", 24: "o", 25: "p"}
 RN := Array[C]
-Random, GoTimes, 1500, 2500 ; randomized script cooldown trick to make the rplace.live server think it's a real human placing pixels and not just a macro that's doing it, preventing possible page reloads
+Random, GoTimes, 1500, 1800 ; randomized script cooldown trick to make the rplace.live server think it's a real human placing pixels and not just a macro that's doing it, preventing possible page reloads
 
 F7::
 Gui, Submit, nohide
