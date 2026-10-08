@@ -21,6 +21,9 @@ SB_SetText("Inactive")
 Gui, Show,, ARCB (Default) by JurSecondie
 return
 
+colors:
+Random, GoTimes, 1500, 2500 ; randomized script cooldown trick to make the rplace.live server think it's a real human placing pixels and not just a macro that's doing it, preventing possible page reloads
+
 F7::
 Gui, Submit, nohide
 Pause, Toggle
@@ -40,6 +43,8 @@ Loop
 {
    Loop % GoL - 1
    {
+gosub colors
+Sleep, 100
 Send, % "{" J " down}"
 Sleep, 100
 Send, % "{" J " up}"
@@ -51,6 +56,8 @@ Send, {Left down}
 Sleep, 100
 Send, {Left up}
    }
+gosub colors
+Sleep, 100
 Send, % "{" J " down}"
 Sleep, 100
 Send, % "{" J " up}"
@@ -63,6 +70,8 @@ Sleep, 100
 Send, {Up up}
    Loop % GoR - 1
    {
+gosub colors
+Sleep, 100
 Send, % "{" K " down}"
 Sleep, 100
 Send, % "{" K " up}"
@@ -74,6 +83,8 @@ Send, {Right down}
 Sleep, 100
 Send, {Right up}
    }
+gosub colors
+Sleep, 100
 Send, % "{" K " down}"
 Sleep, 100
 Send, % "{" K " up}"
@@ -90,6 +101,8 @@ if (M = "n")
 {
 Loop
 {
+gosub colors
+Sleep, 100
 Send, % "{" J " down}"
 Sleep, 100
 Send, % "{" J " up}"
